@@ -1,0 +1,263 @@
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E3D3A442C79F3E800A855A5 /* CraneRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3A432C79F3E800A855A5 /* CraneRemoteApp.swift */; };
+		9E3D3A462C79F3E900A855A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3A452C79F3E900A855A5 /* ContentView.swift */; };
+		9E3D3A482C79F3E900A855A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D3A472C79F3E900A855A5 /* Assets.xcassets */; };
+		9E3D3A4B2C79F3E900A855A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D3A4A2C79F3E900A855A5 /* Preview Assets.xcassets */; };
+		9E3D3A532C79F40800A855A5 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3A522C79F40800A855A5 /* WebView.swift */; };
+		9E3D3A552C79F41900A855A5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3A542C79F41900A855A5 /* Settings.swift */; };
+		9E3D3A572C79F43800A855A5 /* LocalTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3A562C79F43800A855A5 /* LocalTestView.swift */; };
+		9E3D3A5A2C79F44D00A855A5 /* LocalTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D3A592C79F44D00A855A5 /* LocalTest.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E3D3A422C79F3E800A855A5 /* CraneRemote */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraneRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3D3A432C79F3E800A855A5 /* CraneRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraneRemoteApp.swift; sourceTree = "<group>"; };
+		9E3D3A452C79F3E900A855A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E3D3A472C79F3E900A855A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E3D3A4A2C79F3E900A855A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E3D3A4D2C79F3E900A855A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3D3A522C79F40800A855A5 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		9E3D3A542C79F41900A855A5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9E3D3A562C79F43800A855A5 /* LocalTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTestView.swift; sourceTree = "<group>"; };
+		9E3D3A592C79F44D00A855A5 /* LocalTest.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = LocalTest.html; sourceTree = "<group>"; };
+		9ED9F68B2C79F5170068D261 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9E3D3A3B2C79F3E800A855A5 = {
+			isa = PBXGroup;
+			children = (
+				9ED9F68B2C79F5170068D261 /* README.md */,
+				9E3D3A412C79F3E800A855A5 /* CraneRemote */,
+				9E3D3A4C2C79F3E900A855A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E3D3A412C79F3E800A855A5 /* CraneRemote */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D3A432C79F3E800A855A5 /* CraneRemoteApp.swift */,
+				9E3D3A452C79F3E900A855A5 /* ContentView.swift */,
+				9E3D3A522C79F40800A855A5 /* WebView.swift */,
+				9E3D3A542C79F41900A855A5 /* Settings.swift */,
+				9E3D3A562C79F43800A855A5 /* LocalTestView.swift */,
+				9E3D3A472C79F3E900A855A5 /* Assets.xcassets */,
+				9E3D3A492C79F3E900A855A5 /* Preview Content */,
+				9E3D3A4D2C79F3E900A855A5 /* Info.plist */,
+				9E3D3A582C79F44D00A855A5 /* Resources */,
+			);
+			path = CraneRemote;
+			sourceTree = "<group>";
+		};
+		9E3D3A492C79F3E900A855A5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D3A4A2C79F3E900A855A5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E3D3A4C2C79F3E900A855A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D3A422C79F3E800A855A5 /* CraneRemote */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E3D3A582C79F44D00A855A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D3A592C79F44D00A855A5 /* LocalTest.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E3D3A3F2C79F3E800A855A5 /* CraneRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E3D3A502C79F3E900A855A5 /* Build configuration list for PBXNativeTarget "CraneRemote" */;
+			buildPhases = (
+				9E3D3A3C2C79F3E800A855A5 /* Sources */,
+				9E3D3A3D2C79F3E800A855A5 /* Frameworks */,
+				9E3D3A3E2C79F3E800A855A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CraneRemote;
+			packageProductDependencies = (
+			);
+			productName = CraneRemote;
+			productReference = 9E3D3A422C79F3E800A855A5 /* CraneRemote */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E3D3A3A2C79F3E800A855A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1560;
+				LastUpgradeCheck = 1560;
+				TargetAttributes = {
+					9E3D3A3F2C79F3E800A855A5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 9E3D3A3D2C79F3E900A855A5 /* Build configuration list for PBXProject "CraneRemote" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E3D3A3B2C79F3E800A855A5;
+			productRefGroup = 9E3D3A4C2C79F3E900A855A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E3D3A3F2C79F3E800A855A5 /* CraneRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E3D3A3E2C79F3E800A855A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3D3A5A2C79F44D00A855A5 /* LocalTest.html in Resources */,
+				9E3D3A4B2C79F3E900A855A5 /* Preview Assets.xcassets in Resources */,
+				9E3D3A482C79F3E900A855A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E3D3A3C2C79F3E800A855A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E3D3A572C79F43800A855A5 /* LocalTestView.swift in Sources */,
+				9E3D3A532C79F40800A855A5 /* WebView.swift in Sources */,
+				9E3D3A462C79F3E900A855A5 /* ContentView.swift in Sources */,
+				9E3D3A552C79F41900A855A5 /* Settings.swift in Sources */,
+				9E3D3A442C79F3E800A855A5 /* CraneRemoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E3D3A4E2C79F3E900A855A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ACCELERATE_PROJECT = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CraneRemote/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CraneRemote/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CraneRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "2";
+			};
+			name = Debug;
+		};
+		9E3D3A4F2C79F3E900A855A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ACCELERATE_PROJECT = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CraneRemote/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CraneRemote/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CraneRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "2";
+			};
+			name = Release;
+		};
+		9E3D3A512C79F3E900A855A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E3D3A522C79F3E900A855A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E3D3A3D2C79F3E900A855A5 /* Build configuration list for PBXProject "CraneRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3D3A512C79F3E900A855A5 /* Debug */,
+				9E3D3A522C79F3E900A855A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E3D3A502C79F3E900A855A5 /* Build configuration list for PBXNativeTarget "CraneRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E3D3A4E2C79F3E900A855A5 /* Debug */,
+				9E3D3A4F2C79F3E900A855A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E3D3A3A2C79F3E800A855A5 /* Project object */;
+}

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>WebSocket Test</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; background-color: #f0f2f5; color: #1c1e21;}
+        h1, h2 { text-align: center; color: #333; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .buttons { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px; }
+        button { font-size: 1.2rem; padding: 15px; border-radius: 8px; border: none; cursor: pointer; background-color: #007aff; color: white; transition: background-color 0.2s; }
+        button:active { background-color: #0056b3; }
+        #status { font-weight: bold; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 20px; }
+        .connected { color: #34c759; background-color: #e5f9e7; }
+        .disconnected { color: #ff3b30; background-color: #ffebee; }
+        #log { margin-top: 20px; padding: 10px; background-color: #eef; border-radius: 5px; height: 150px; overflow-y: scroll; font-family: monospace; font-size: 0.9rem; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Local Test Utility</h1>
+        <div id="status" class="disconnected">DISCONNECTED</div>
+        <div class="buttons">
+            <button onmousedown="sendCommand({horn: true})" onmouseup="sendCommand({horn: false})">Test Horn</button>
+            <button onmousedown="sendCommand({left: {dir: 'fwd', speed: 1, throttle: 10}})" onmouseup="sendCommand({left: {dir: 'stop', speed: 1, throttle: 0}})">Test Fwd (Left)</button>
+            <button onmousedown="sendCommand({type: 'ping'})">Test Ping</button>
+        </div>
+        <h2>Log</h2>
+        <div id="log"></div>
+    </div>
+
+    <script>
+        const wsUrl = '%%WEBSOCKET_URL%%';
+        const statusEl = document.getElementById('status');
+        const logEl = document.getElementById('log');
+        let socket;
+        let seq = 0;
+
+        function log(message) {
+            const p = document.createElement('p');
+            p.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logEl.appendChild(p);
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+
+        function connect() {
+            log(`Attempting to connect to ${wsUrl}...`);
+            socket = new WebSocket(wsUrl);
+
+            socket.onopen = () => {
+                statusEl.textContent = 'CONNECTED';
+                statusEl.className = 'connected';
+                log('Connection established.');
+            };
+
+            socket.onclose = () => {
+                statusEl.textContent = 'DISCONNECTED';
+                statusEl.className = 'disconnected';
+                log('Connection closed. Retrying in 3 seconds...');
+                setTimeout(connect, 3000);
+            };
+
+            socket.onerror = (error) => {
+                log(`Error: ${error.message || 'Unknown WebSocket error'}`);
+                socket.close();
+            };
+
+            socket.onmessage = (event) => {
+                log(`Received: ${event.data}`);
+            };
+        }
+
+        function sendCommand(payload) {
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                const command = {
+                    type: 'cmd',
+                    ts: Date.now(),
+                    seq: ++seq,
+                    payload: payload
+                };
+                const msg = JSON.stringify(command);
+                socket.send(msg);
+                log(`Sent: ${msg}`);
+            } else {
+                log('Cannot send command, not connected.');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', connect);
+    </script>
+</body>
+</html>
